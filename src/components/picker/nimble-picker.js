@@ -12,7 +12,7 @@ import { PickerPropTypes } from '../../utils/shared-props'
 
 import Anchors from '../anchors'
 import Category from '../category'
-import Preview from '../preview'
+//import Preview from '../preview'
 import Search from '../search'
 import { PickerDefaultProps } from '../../utils/shared-default-props'
 
@@ -582,7 +582,7 @@ export default class NimblePicker extends React.PureComponent {
 
         {(showPreview || showSkinTones) && (
           <div className="emoji-mart-bar">
-            <Preview
+            {/*<Preview
               ref={this.setPreviewRef}
               data={this.data}
               title={title}
@@ -605,7 +605,7 @@ export default class NimblePicker extends React.PureComponent {
                 skinEmoji: skinEmoji,
               }}
               i18n={this.i18n}
-            />
+            />*/}
           </div>
         )}
       </section>
