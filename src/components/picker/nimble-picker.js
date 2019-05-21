@@ -580,9 +580,9 @@ export default class NimblePicker extends React.PureComponent {
           })}
         </div>
 
-        {(showPreview || showSkinTones) && (
+        {/*(showPreview || showSkinTones) && (
           <div className="emoji-mart-bar">
-            {/*<Preview
+            <Preview
               ref={this.setPreviewRef}
               data={this.data}
               title={title}
@@ -605,9 +605,9 @@ export default class NimblePicker extends React.PureComponent {
                 skinEmoji: skinEmoji,
               }}
               i18n={this.i18n}
-            />*/}
+            />
           </div>
-        )}
+        )*/}
       </section>
     )
   }
