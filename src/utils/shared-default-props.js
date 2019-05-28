@@ -1,21 +1,27 @@
 const EmojiDefaultProps = {
   skin: 1,
-  set: 'apple',
-  sheetSize: 64,
-  sheetColumns: 52,
-  sheetRows: 52,
+  //set: 'apple',
+  sheetSize: 48,
+  sheetColumns: 85, //REMEMBER TO CHANGE THIS NUMBER!!
+  sheetRows: 128, //REMEMBER TO CHANGE THIS NUMBER!!
   native: false,
   forceSize: false,
   tooltip: false,
   backgroundImageFn: (set, sheetSize) =>
-    `https://unpkg.com/emoji-datasource-${set}@${EMOJI_DATASOURCE_VERSION}/img/${set}/sheets-256/${sheetSize}.png`,
+    'http://localhost:5000/spritesheet.png',
 }
 
 const PickerDefaultProps = {
-  onClick: () => {},
-  onSelect: () => {},
-  onSkinChange: () => {},
-  emojiSize: 24,
+  onClick: (data) => {
+    console.log(data)
+  },
+  onSelect: (data) => {
+    console.log(data)
+  },
+  onSkinChange: (data) => {
+    console.log(data)
+  },
+  emojiSize: 64,
   perLine: 9,
   i18n: {},
   style: {},
